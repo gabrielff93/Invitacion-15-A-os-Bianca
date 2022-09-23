@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Invitacion 15 Bianca</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./js/contador.js">
+
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+
+
+</head>
+
+
+<body>
+    <div class="contenedor">
+        <img src="./img/IMG-20220921-WA0120.jpg" />
+        <div class="text1">MIS 15</div>
+        <div class="centrado">Bianca
+            <br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                  <!-- Contador regresivo -->
+    <section>
+        <p>
+            <span id="days"></span> días / <span id="hours"></span> horas / <span id="minutes"></span> minutos / <span id="seconds"></span> segundos
+        </p>
+    </section> 
+    <!-- Fin contador regresivo -->
+   
+</div>
+    </div>
+<br>
+    <div class="lugar__dia">
+        <h2>Donde y Cuando?</h2>
+        <br>
+        <img src="./img/salon1.jpg" class="rounded float-start" alt="salon1">
+        <img src="./img/salon2.jpeg" class="rounded float-end" alt="salon2">
+        <br>
+        <br>
+        <div class="cuadro__text">
+            <p class="ctext1">Salon de Eventos "Costa de Marfil"</p><br>
+            <p class="ctext2">Av. Hipolito Yrigoyen 1360, Avellaneda.</p>
+            <br>
+            <a target="_blank" class="fcc-btn" href="https://www.google.com.ar/maps/place/Costa+Marfil+Recepciones/@-34.6726673,-58.3833454,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcccb7351b920d:0x8b28195d9cb93ee8!8m2!3d-34.6725771!4d-58.3813312?hl=es">Ver Mapa</a>
+        </div>
+        <br>
+        <br>
+        <h3 class="vestimenta">Vestimenta</h3>
+        <br>
+        <p class="vtext">Elegante Sport</p>
+        <br><br>
+        <img src="./img/descarga-removebg-preview.png" alt="vestir">
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <h4> Mis Fotos</h4>
+
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="./img/Bian1.JPG" alt="Card image cap">
+        <div class="card-body">
+          
+        </div>
+        
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="./img/bian2.jpg" alt="Card image cap">
+        <div class="card-body">
+          
+        </div>
+        <div class="card-footer">
+    
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="./img/bian3.jpg" alt="Card image cap">
+        <div class="card-body">
+          
+          
+        </div>
+        <div class="card-footer">
+         
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="./img/bian4.JPG" alt="Card image cap">
+          <div class="card-body">
+            
+          </div>
+          <div class="card-footer">
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="./img/bian5.jpg" alt="Card image cap">
+        <div class="card-body">
+          
+        </div>
+        <div class="card-footer">
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="./img/bian6.JPG" alt="Card image cap">
+            <div class="card-body">
+              
+            </div>
+            <div class="card-footer">
+    </div>
+    
+
+
+
+        
+            
+           
+    
+   
+    
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => { 
+  
+          //===
+          // VARIABLES
+          //===
+          const DATE_TARGET = new Date('09/30/2022 9:00 PM');
+          // DOM for render
+          const SPAN_DAYS = document.querySelector('span#days');
+          const SPAN_HOURS = document.querySelector('span#hours');
+          const SPAN_MINUTES = document.querySelector('span#minutes');
+          const SPAN_SECONDS = document.querySelector('span#seconds');
+          // Milliseconds for the calculations
+          const MILLISECONDS_OF_A_SECOND = 1000;
+          const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
+          const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
+          const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24
+  
+          //===
+          // FUNCTIONS
+          //===
+  
+          /**
+          * Method that updates the countdown and the sample
+          */
+          function updateCountdown() {
+              // Calcs
+              const NOW = new Date()
+              const DURATION = DATE_TARGET - NOW;
+              const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
+              const REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
+              const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
+              const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
+              // Thanks Pablo Monteserín (https://pablomonteserin.com/cuenta-regresiva/)
+  
+              // Render
+              SPAN_DAYS.textContent = REMAINING_DAYS;
+              SPAN_HOURS.textContent = REMAINING_HOURS;
+              SPAN_MINUTES.textContent = REMAINING_MINUTES;
+              SPAN_SECONDS.textContent = REMAINING_SECONDS;
+          }
+  
+          //===
+          // INIT
+          //===
+          updateCountdown();
+          // Refresh every second
+          setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
+      });
+      </script>
+  </div>
+    
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
+</body>
+</html>
