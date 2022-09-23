@@ -25,7 +25,7 @@ body {
     top: 10px;
     left: 1050px;
 }
-.centrado{
+/* .centrado{
     color: aliceblue;
     position: absolute;
     top: 50%;
@@ -38,7 +38,7 @@ body {
  }
  .centrado p span {
   color: red;
- }
+ } */
 
 
  .lugar__dia {
@@ -80,6 +80,18 @@ h2 {
   .titulo__video {
     font-size: 25px;
     text-align: center;
+  }
+
+  .asistencia_contenedor {
+    text-align: center;
+  }
+  .titulo__asistencia {
+    font-size: 28px;
+    font-family: 'Rock Salt', cursive;
+  }
+  .conf_text {
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
   }
 /* .rounded float-start { 
     width: 50px;
