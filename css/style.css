@@ -29,14 +29,16 @@
     transform: translate(-50%, -50%);
 }
 
-section p span {
-   font-size: 35px; 
-   color: red;
-
+section p {
+   font-size: 25px;
+ }
+ section p span {
+  color: red;
  }
 
+
  .lugar__dia {
-     text-align: center;
+   text-align: center;
      
 }
 h2 {
