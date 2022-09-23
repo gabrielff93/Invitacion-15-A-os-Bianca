@@ -6,7 +6,7 @@
 
 .contenedor{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     /* position: relative;
     display: inline-block;
@@ -21,18 +21,17 @@
     left: 1050px;
 }
 .centrado{
-    font-size: 40px;
     color: aliceblue;
     position: absolute;
-    top: 50%;
-    left: 55%;
+    top: 170%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
-section p {
+.centrado p {
    font-size: 25px;
  }
- section p span {
+ .centrado p span {
   color: red;
  }
 
