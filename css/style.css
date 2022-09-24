@@ -45,7 +45,8 @@ body {
    text-align: center;
      
 }
-h2 {
+h2 {          
+  font-family: 'Oleo Script Swash Caps', cursive;                               
     font-size: 40px;
     color: red;
 }
@@ -61,10 +62,11 @@ h2 {
      border-bottom: 10px;
  }
  .vestimenta { 
-     font-size: 35px;
+     font-size: 30px;
  } 
  .vtext {
-     font-size: 25px;
+  font-family: 'Tangerine', cursive; 
+     font-size: 30px;
   }
   .vtext1 {
     font-size: 21px;
@@ -100,10 +102,10 @@ h2 {
  @media screen and (min-width: 480px) {
   .centrado{
     /* color: aliceblue; */
-    position: absolute;
+    /* position: absolute;
     top: -35%;
     left: 75%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 .cuenta__regresiva p {
