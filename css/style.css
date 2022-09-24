@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 body {
- /*    background-image: url(../img/fondo\ cuadros.jpg);
+    background-image: url(../img/fondo\ blanco\ abst.jpg);
     background-size: cover;
     background-repeat:no-repeat;
-    background-position: center center; */
+    background-position: center center;
  
 }
 
@@ -42,6 +42,7 @@ body {
 
 
  .lugar__dia {
+  background-image: url(../img/fondo\ blanco\ abst.jpg);
    text-align: center;
      
 }
@@ -86,6 +87,7 @@ h2 {
   }
 
   .asistencia_contenedor {
+    background-image: url(../img/fondo\ blanco\ abst.jpg);
     text-align: center;
   }
   .titulo__asistencia {
@@ -136,6 +138,10 @@ span {
   .titulo__contador {
     /* text-align: center; */
   }
+ }
+
+ video {
+  background-image: url(../img/fondo\ blanco\ abst.jpg);
  }
   
  video source {
